@@ -1,0 +1,60 @@
+/* General styling for Terms of Service and Privacy Policy */
+.terms-of-service, .privacy-policy {
+    max-width: 800px;       /* Limits the width for readability */
+    margin: 50px auto;      /* Centers the section with vertical spacing */
+    padding: 20px;          /* Adds padding around the content */
+    text-align: left;       /* Aligns text to the left for better readability */
+    line-height: 1.6;       /* Improves readability with line spacing */
+    color: #333;            /* Sets a neutral text color */
+    font-size: 1em;
+}
+
+/* Headings styling */
+.terms-of-service h2, .privacy-policy h2,
+.terms-of-service h3, .privacy-policy h3 {
+    text-align: center;     /* Centers the section headings */
+    margin-bottom: 15px;
+    color: #000;            /* Darker color for headings */
+}
+
+.terms-of-service h2, .privacy-policy h2 {
+    font-size: 2em;         /* Slightly larger font for the main heading */
+}
+
+.terms-of-service h3, .privacy-policy h3 {
+    font-size: 1.2em;       /* Smaller font for subsection headings */
+    margin-top: 20px;
+}
+
+/* Links styling */
+.terms-of-service a, .privacy-policy a {
+    color: #007bff;         /* Custom color for links */
+    text-decoration: none;
+}
+
+.terms-of-service a:hover, .privacy-policy a:hover {
+    text-decoration: underline;
+}
+
+/* Address styling for Contact Us sections */
+.privacy-policy address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .terms-of-service, .privacy-policy {
+        margin: 20px;         /* Reduced margin for smaller screens */
+        padding: 15px;        /* Slightly smaller padding */
+        font-size: 0.9em;     /* Smaller font size for readability on mobile */
+    }
+    
+    .terms-of-service h2, .privacy-policy h2 {
+        font-size: 1.5em;     /* Scales down main heading for mobile */
+    }
+    
+    .terms-of-service h3, .privacy-policy h3 {
+        font-size: 1.1em;     /* Scales down subheadings for mobile */
+    }
+}

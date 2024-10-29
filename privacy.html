@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <div id="head"></div>
+    <script>
+        fetch("/html/head.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("head").innerHTML = data);
+    </script>
+</head>
+
+
+<body>
+    <div id="header"></div>
+    <script>
+        fetch("/html/header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+    </script>
+
+    <main>
+        <section class="privacy-policy">
+            <h2>Greybox B.V. Privacy Policy</h2>
+            <p><strong>Last updated:</strong> October 2024</p>
+        
+            <h3>1. Information We Collect</h3>
+            <p>We collect personal information that you provide directly to us, such as:</p>
+            <ul>
+                <li>Contact details (name, email, etc.)</li>
+                <li>Account credentials (username and password)</li>
+                <li>Payment information (credit card details)</li>
+                <li>Information related to your use of the platform (3D models, preferences, etc.)</li>
+            </ul>
+            <p>
+                We may also collect non-personal information automatically, including your IP address, browser type, and usage data via cookies.
+            </p>
+        
+            <h3>2. How We Use Your Information</h3>
+            <p>We use your information to:</p>
+            <ul>
+                <li>Provide, operate, and improve the Greybox Platform.</li>
+                <li>Process payments and fulfill transactions.</li>
+                <li>Send you account-related notifications and updates.</li>
+                <li>Respond to your inquiries and provide customer support.</li>
+                <li>Comply with legal obligations.</li>
+            </ul>
+        
+            <h3>3. Sharing of Information</h3>
+            <p>
+                We will not share your personal information with third parties except as required to provide the Service, such as processing payments through third-party processors, or as required by law.
+            </p>
+        
+            <h3>4. Security</h3>
+            <p>
+                We implement appropriate security measures to protect your personal information. However, we cannot guarantee absolute security, as no system is completely secure.
+            </p>
+        
+            <h3>5. Data Retention</h3>
+            <p>
+                We will retain your personal information for as long as your account is active or as needed to provide you with the Service. You can request the deletion of your data at any time by contacting us at <a href="mailto:hello@greybox.app">hello@greybox.app</a>.
+            </p>
+        
+            <h3>6. Your Rights</h3>
+            <p>
+                Under the GDPR, if you are located in the European Economic Area (EEA), you have the right to access, correct, delete, or restrict the use of your personal data. To exercise these rights, please contact us at <a href="mailto:hello@greybox.app">hello@greybox.app</a>.
+            </p>
+        
+            <h3>7. Cookies</h3>
+            <p>
+                We use cookies to enhance your experience on our platform. You can control the use of cookies through your browser settings. By using our platform, you consent to our use of cookies.
+            </p>
+        
+            <h3>8. Changes to the Privacy Policy</h3>
+            <p>
+                We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting the updated policy on our website.
+            </p>
+        
+            <h3>9. Contact Us</h3>
+            <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+            <address>
+                Greybox B.V.<br>
+                Amsterdam, The Netherlands<br>
+                <a href="mailto:hello@greybox.app">hello@greybox.app</a>
+            </address>
+        </section>        
+    </main>
+
+    <div id="footer"></div>
+    <script>
+        fetch("/html/footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+
+</body>
+
+</html>

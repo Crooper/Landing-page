@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <div id="head"></div>
+    <script>
+        fetch("/html/head.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("head").innerHTML = data);
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "Greybox",
+          "description": "GREYBOX is a collaborative 3D prototyping tool. Seamlessly create and refine 3D concepts and mockups.",
+          "applicationCategory": "DesignSoftware",
+          "operatingSystem": "Web",
+          "url": "https://greybox.app",
+          "offers": {
+            "@type": "Offer",
+            "price": "0", 
+            "priceCurrency": "USD"
+          }
+        }
+        </script>
+</head>
+
+
+<body>
+    <div id="header"></div>
+    <script>
+        fetch("/html/header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+    </script>
+
+    <main>
+        <section class="landing">
+            <div class="image-body">
+                <img src="/images/boxes.png" alt="Boxes">
+            </div>
+            <div class="content">
+                <h1>From idea to 3D like🫰</h1>
+                <p>Greybox lets you prototype, share, and collaborate in 3D space, <span style="color:black;">no technical skills needed.</span>
+                </p>
+                <form id="dataForm">
+                    <input type="text" id="first-name" name="firstName" placeholder="First Name" required>
+                    <input type="text" id="last-name" name="lastName" placeholder="Last Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    <button type="submit">Follow our journey</button>
+                </form>
+                <p id="responseMessage"></p>
+            </div>
+        </section>
+    </main>
+
+    
+    <div id="footer"></div>
+    <script>
+        fetch("/html/footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

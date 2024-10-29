@@ -1,0 +1,331 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+    background-color: #ffffff;
+}
+
+main {
+    flex: 1;
+}
+
+.logo  {
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #000;
+    padding-left: 10%;
+}
+
+#app-button {
+    margin-right: 10%;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+}
+
+#app-button a{
+    text-decoration: none;
+    color: white;
+}
+
+#app-button:hover {
+    background-color: #4e4e4e;
+}
+
+.landing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.image-body {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-body img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.content p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #9d9d9d;
+}
+
+#dataForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 400px;
+}
+
+#dataForm ::placeholder {
+    color: #a9a9a9;
+}
+
+#dataForm input {
+    background-color: #f2f2f2;
+    padding: 10px;
+    width: 100%;
+    font-size: 1rem;
+    border: 0px;
+    border-radius: 10px;
+}
+
+#dataForm button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+#dataForm button:hover {
+    background-color: #4e4e4e;
+}
+
+.response-message {
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.response-success {
+    font-size: 1.25rem;
+    color: black;
+}
+
+.response-error {
+    font-size: 1.25rem;
+    color: black;
+}
+
+/* Footer styling */
+#footer {
+    padding: 20px 40px;
+    background-color: #ffffff;
+    color: #000;
+    font-size: 1em;
+}
+
+/* Top section containing links and social icons */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Centered links */
+.footer-links {
+    text-align: center;
+}
+
+.footer-links a {
+    margin: 0 1em 0 0;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #4e4e4e;
+}
+
+/* Social icons row aligned right */
+.social-row {
+    display: flex;
+    gap: 1em;
+}
+
+.social-icon {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #4e4e4e;
+}
+
+.social-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+/* Divider line */
+.divider-line {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    margin: 10px 0;
+}
+
+/* Bottom section containing company name and policy links */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85em;
+}
+
+.footer-bottom nav a {
+    color: #000;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.footer-bottom nav a:hover {
+    color: #4e4e4e;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+    #header{
+        padding: 30px 10px;
+    }
+    
+    .landing {
+        flex-direction: column;
+        padding: 50px;
+        transform: none;
+        position: relative;
+    }
+
+    .image-body {
+        margin-bottom: 20px;
+        width: 60%;
+    }
+
+    #dataForm {
+        align-items: center;
+        width: 100%;
+    }
+
+    .content {
+        padding: 0;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    #dataForm {
+        align-items: center;
+        width: 100%;
+    }
+
+    #dataForm input {
+        width: 90%;
+    }
+
+    .footer-top, .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+     .footer-links {
+        margin-bottom: 1em;
+    }
+
+    .footer-bottom {
+        margin-top: 10px;
+    }
+
+    .footer-bottom span{
+        margin-bottom: 0.5em;
+    }
+
+    .footer-bottom nav a {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    #app-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+}
