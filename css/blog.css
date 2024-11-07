@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.blog-gallery {
+    padding: 20px 40px;
+}
+
+.blog-article {
+    padding: 20px 40px;
+}
+
+.blog-gallery .featured-article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.featured-article {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; /* Adjust gap as needed */
+}
+
+.featured-article-link {
+    text-decoration: none;
+    border-radius: 5%;
+    color: inherit;
+    display: block;
+    border: 1px solid #ccc;
+    transition: transform 0.2s ease-in-out;
+    flex: 1;
+    max-width: 50%; /* Make it take half of the container's width */
+}
+
+.featured-article-link:hover {
+    transform: scale(1.02);
+    border-color: #000;
+}
+
+.featured-article-link h3{
+    padding: 0 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.featured-article img {
+    width: 100%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    height: 60%;
+}
+
+.featured-text {
+    flex: 1;
+    padding: 10px;
+}
+
+.featured-image {
+    width: 100%;
+    height: auto;
+}
+
+.all-articles {
+    margin-top: 40px;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.articles-grid .article-card {
+    text-decoration: none;
+    border-radius: 5%;
+    color: inherit;
+    display: block;
+    border: 1px solid #ccc;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.articles-grid .article-card:hover {
+    transform: scale(1.05);
+    border-color: #000;
+}
+
+.article-card img {
+    width: 100%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    height: 60%;
+}
+
+.article-cover-container {
+    width: 100vw; /* Full viewport width */
+    margin-left: calc(50% - 50vw); /* Center-align container to ignore body margins */
+    overflow: hidden; /* Hide any overflow content if necessary */
+}
+
+.article-cover {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.article-content {
+    margin-bottom: 40px;
+}
+
+.article-navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-navigation a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-gallery .featured-article {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .featured-article {
+        flex-direction: column;
+    }
+
+    .featured-article-link,
+    .featured-text {
+        max-width: 100%;
+    }
+}

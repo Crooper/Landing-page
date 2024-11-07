@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why We Are Building Greybox - Greybox Blog</title>
+    <meta name="description" content="Discover why we built Greybox: making 3D thinking accessible and bridging the digital and physical worlds through fast, collaborative concepting tools.">
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://greybox.app/blog/welcome_greybox">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Why We Are Building Greybox">
+    <meta property="og:description" content="Learn why we created Greybox, focusing on accessibility, speed, and collaboration in 3D concepting.">
+    <meta property="og:image" content="https://greybox.app/assets/blog/greybox_wordmark_landscape.png">
+    <meta property="og:url" content="https://greybox.app/blog/welcome_greybox">
+    <meta property="og:type" content="article">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Why We Are Building Greybox">
+    <meta name="twitter:description" content="Discover the mission behind Greybox: accessible, fast, and collaborative 3D design.">
+    <meta name="twitter:image" content="https://greybox.app/assets/blog/greybox_wordmark_landscape.png">
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Why We Are Building Greybox",
+        "image": "https://greybox.app/assets/blog/greybox_wordmark_landscape.png",
+        "author": {
+            "@type": "Person",
+            "name": "Quentin de La Martinière"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Greybox",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://greybox.app/assets/greybox_logo_wordmark.svg"
+            }
+        },
+        "datePublished": "2024-11-07",
+        "dateModified": "2024-11-07",
+        "description": "Discover why we built Greybox: making 3D thinking accessible and bridging the digital and physical worlds through fast, collaborative concepting tools."
+    }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/terms.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8T27DX90NP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-8T27DX90NP');
+    </script>
+    <link rel="stylesheet" href="/css/blog.css">
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        fetch("/html/header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+    </script>
+    <div class="article-cover-container">
+        <img src="/assets/blog/greybox_wordmark_landscape.png" alt="Article Cover" class="article-cover">
+    </div>
+    <main class="blog-article">
+        <h2>Why we are building Greybox</h2>
+        <div class="article-content">
+            <p>Welcome to Greybox!</p>
+            <p>With Greybox, we embark on a journey to make thinking and concepting in 3D more accessible.</p>
+            <p>We firmly believe in the power of 3D to bridge the digital and physical worlds. It enables us to create objects and experiences that we can interact with and immerse ourselves in, offering unparalleled creative freedom - a tool for building worlds.</p>
+            <p>Yet, despite being our most technologically advanced design tool, or maybe because of it, 3D design is still considered a niche expertise that is beyond the capabilities of the many, even within industries that heavily rely on it.</p>
+            <p>This is where Greybox comes in.</p>
+            <p>We are creating the fastest concepting tool to take ideas to 3D scenes in minutes.</p>
+            <p>Our experience relies on 3 pillars:</p>
+            <ul>
+                <li><strong>Accessibility:</strong> without any prior knowledge, anyone can jump in Greybox and start concepting a scene in 3D space from their laptop.</li>
+                <li><strong>Speed:</strong> Greybox enables you to start iterating on 3D concepts within minutes.</li>
+                <li><strong>Collaboration:</strong> Greybox brings the 3D design process in a collaborative cloud-space where entire teams can view, review, and work together.</li>
+            </ul>
+            <p>Please join us in our mission to unlock 3D thinking and don’t hesitate to <a href="mailto:hello@greybox.app" style="color:black;">reach out</a> out with feedback, suggestions, or if you just want to talk 3D design! ☕</p>
+            <p>Quentin & Firtina</p>
+        </div>
+        <button id="app-button"><a href="/blog/blog.html">Back to blog</a></button>
+    </main>
+
+    <div id="footer"></div>
+    <script>
+        fetch("/html/footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+</body>
+</html>
